@@ -58,7 +58,12 @@ export function BasicChips() {
       <Chip
         label="All"
         variant="outlined"
-        sx={{ color: "white", fontWeight: "bold", border: "1px solid #CEFF86" }}
+        sx={{
+          color: "white",
+          fontWeight: "bold",
+          border: "1px solid #CEFF86",
+          width: "80px",
+        }}
         avatar={<Avatar alt="all" src={all} />}
       ></Chip>
       <Chip
@@ -66,7 +71,7 @@ export function BasicChips() {
         variant="outlined"
         sx={{
           color: "white",
-          opacity: "0.3",
+          width: "120px",
           fontWeight: "bold",
           border: "1px solid #2E2E2E",
         }}
@@ -75,37 +80,67 @@ export function BasicChips() {
       <Chip
         label="Avalanche"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "120px",
+        }}
         avatar={<Avatar alt="ava" src={ava} />}
       ></Chip>
       <Chip
         label="BNB Chain"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "120px",
+        }}
         avatar={<Avatar alt="bnb" src={bnb} />}
       ></Chip>
       <Chip
         label="Fantom"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "120px",
+        }}
         avatar={<Avatar alt="fan" src={fan} />}
       ></Chip>
       <Chip
-        label="optamasm"
+        label="Optamasm"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "120px",
+        }}
         avatar={<Avatar alt="opt" src={opt} />}
       ></Chip>
       <Chip
         label="Polygon"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "120px",
+        }}
         avatar={<Avatar alt="poly" src={pol} />}
       ></Chip>
       <Chip
         label="+39"
         variant="outlined"
-        sx={{ color: "white", opacity: "0.3", fontWeight: "bold" }}
+        sx={{
+          color: "white",
+          border: "1px solid #2E2E2E",
+          fontWeight: "bold",
+          width: "50px",
+        }}
         // avatar={<Avatar alt="+39" src={threenine} />}
       ></Chip>
     </Stack>
@@ -208,12 +243,51 @@ export default function TrackingHeads() {
             label="Portfolio"
             sx={{
               color: "white",
+              marginBottom: "25px",
+              textTransform: "none",
+              fontWeight: "bold",
             }}
           />
-          <Tab value="two" label="Transactions" sx={{ color: "white" }} />
-          <Tab value="three" label="Analytics" sx={{ color: "white" }} />
-          <Tab value="four" label="Wallet Profiler" sx={{ color: "white" }} />
-          <Tab value="five" label="NFT Profiler" sx={{ color: "white" }} />
+          <Tab
+            value="two"
+            label="Transactions"
+            sx={{
+              color: "white",
+              marginBottom: "25px",
+              textTransform: "none",
+              fontWeight: "bold",
+            }}
+          />
+          <Tab
+            value="three"
+            label="Analytics"
+            sx={{
+              color: "white",
+              marginBottom: "25px",
+              textTransform: "none",
+              fontWeight: "bold",
+            }}
+          />
+          <Tab
+            value="four"
+            label="Wallet Profiler"
+            sx={{
+              color: "white",
+              marginBottom: "25px",
+              textTransform: "none",
+              fontWeight: "bold",
+            }}
+          />
+          <Tab
+            value="five"
+            label="NFT Profiler"
+            sx={{
+              color: "white",
+              marginBottom: "25px",
+              textTransform: "none",
+              fontWeight: "bold",
+            }}
+          />
         </Tabs>
         <TabPanel sx={{ marginTop: "3rem" }}></TabPanel>
       </Box>
@@ -227,7 +301,13 @@ function TabPanel() {
   return (
     <div>
       <BasicChips />
-      <div style={{ display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "55px",
+        }}
+      >
         <DonutChart
           //   height={100}
           width={250}
@@ -263,6 +343,15 @@ function TabPanel() {
               //: true,
             },
           ]}
+          colors={[
+            "#4D58FF",
+            "#4BF9FF",
+            "#FCED69",
+            "#BD6CFC",
+            "#FA8803",
+            "#999999",
+          ]}
+          strokeColor=""
         />
         <List dense={dense}>
           <ListItem>
@@ -274,7 +363,10 @@ function TabPanel() {
               disableTypography
               primary={
                 <p>
-                  ETH <span className="ml-14">44.02%</span>{" "}
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    ETH
+                  </span>
+                  <span className="ml-14">44.02%</span>
                 </p>
               }
               secondary={secondary ? "Secondary text" : null}
@@ -287,7 +379,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="USDC"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    USDC
+                  </span>
+                  <span className="ml-14">14.11%</span>
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -298,7 +397,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="SHIB"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    SHIB
+                  </span>
+                  <span className="ml-14">13.10%</span>
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -309,7 +415,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="VGX"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    VGX
+                  </span>
+                  <span className="ml-14">10.67%</span>
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -320,7 +433,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="MATIC"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    MATIC
+                  </span>
+                  <span className="ml-14">4.98%</span>
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -331,66 +451,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="OTHERS"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-        </List>
-
-        <List dense={dense}>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="44.02%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="14.11%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="13.10%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="10.67%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="4.98%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="13.12%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="44.02%"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    OTHERS
+                  </span>
+                  <span className="ml-14">13.12%</span>
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -431,6 +499,8 @@ function TabPanel() {
               //: true,
             },
           ]}
+          colors={["#4D58FF", "#FA8803"]}
+          strokeColor=""
         />
         <List dense={dense}>
           <ListItem>
@@ -440,7 +510,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="ETH"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    ETH
+                  </span>
+                  <span className="ml-14">97.98%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -451,7 +528,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="AVALANCHE"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    AVALANCHE
+                  </span>
+                  <span className="ml-14">1.77%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -462,7 +546,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="BNB CHAIN"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    BNB CHAIN
+                  </span>
+                  <span className="ml-14">0.21%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -473,7 +564,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="FANTOM"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    FANTOM
+                  </span>
+                  <span className="ml-14">0.04%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -484,7 +582,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="OPTIMISM"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    OPTIMISM
+                  </span>
+                  <span className="ml-14">00.00%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
@@ -495,65 +600,14 @@ function TabPanel() {
             <ListItemText
               sx={{ color: "#CEFF86", fontSize: "14px" }}
               disableTypography
-              primary="OTHER"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-        </List>
-        <List dense={dense}>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="97.98%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="1.77%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="0.21%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="0.04%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="0.00%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="0.00%"
-              secondary={secondary ? "Secondary text" : null}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              sx={{ color: "#CEFF86", fontSize: "14px" }}
-              disableTypography
-              primary="44.02%"
+              primary={
+                <p>
+                  <span style={{ width: "100px", display: "inline-block" }}>
+                    OTHER
+                  </span>
+                  <span className="ml-14">00.00%</span>{" "}
+                </p>
+              }
               secondary={secondary ? "Secondary text" : null}
             />
           </ListItem>
