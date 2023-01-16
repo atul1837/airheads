@@ -1,5 +1,6 @@
 import TrackingHeads from "./TrackingHeads";
 import SideBar from "./components/SideBar";
+import AboutUs from "./components/AboutUs";
 
 const pages = [
   {
@@ -20,7 +21,7 @@ const pages = [
   {
     key: "ABOUTUS",
     heading: "ABOUT US",
-    component: <div>ABOUTUS</div>,
+    component: <AboutUs />,
   },
 ];
 const extraPages = [
