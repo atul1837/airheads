@@ -1,4 +1,4 @@
-import TrackingHeads from "./TrackingHeads";
+import TrackingHeads from "./components/TrackingHeads";
 import SideBar from "./components/SideBar";
 import AboutUs from "./components/AboutUs";
 
