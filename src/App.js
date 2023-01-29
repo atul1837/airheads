@@ -1,17 +1,20 @@
 import TrackingHeads from "./components/TrackingHeads";
 import SideBar from "./components/SideBar";
 import AboutUs from "./components/AboutUs";
+import Home from "./components/Home";
+import Headmap from "./components/Headmap";
+import Staking from "./components/Staking";
 
 const pages = [
   {
     key: "HOME",
     heading: "HOME",
-    component: <div>HOME</div>,
+    component: <Home />,
   },
   {
     key: "HEADMAP",
     heading: "HEADMAP",
-    component: <div>HEADMAP</div>,
+    component: <Headmap />,
   },
   {
     key: "SHOP",
@@ -28,7 +31,7 @@ const extraPages = [
   {
     key: "STAKING",
     heading: "STAKING",
-    component: <div>STAKING</div>,
+    component: <Staking />,
   },
   {
     key: "SNEAKERHEADS",

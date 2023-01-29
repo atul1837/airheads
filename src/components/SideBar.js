@@ -27,6 +27,17 @@ const socialIcons = [
 export default function SideBar({ pages, extraPages }) {
   const [activePage, setActivePage] = useState();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    setIsMenuOpen(!isMenuOpen);
+  }
+
+  const handleClose = (event) => {
+    setAnchorEl(null);
+    setIsMenuOpen(false);
+  }
 
   useEffect(() => {
     if (pages && pages.length) {
@@ -72,14 +83,13 @@ export default function SideBar({ pages, extraPages }) {
           sx={{ fontSize: ".8rem", fontWeight: 600, paddingTop: ".25rem" }}
           className="mt-0"
           variant="primary"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={handleClick}
         >
           MORE <CaretDownFilledIcon />
         </Button>
         {extraPages && (
           <Menu
             sx={{
-              marginTop: "14rem",
               left: "52px",
               "& .MuiMenu-paper": {
                 backgroundColor: "#000",
@@ -89,6 +99,8 @@ export default function SideBar({ pages, extraPages }) {
               },
             }}
             open={isMenuOpen}
+            onClose={handleClose}
+            anchorEl={anchorEl}
           >
             {extraPages.map((page, i) => (
               <MenuItem

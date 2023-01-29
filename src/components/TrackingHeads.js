@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Portfolio from "./Portfolio";
 import { Tabs, Tab } from "@mui/material";
 import Transactions from "./Transactions";
+import NftProfiler from "./NftProfiler";
 
 const rows = [
   ["NET WORTH", "CLAIMABLE", "TOTAL ASSETS", "TOTAL DEBDS"],
@@ -161,6 +162,7 @@ export default function TrackingHeads() {
 
         {value == "portfolio" && <Portfolio sx={{ marginTop: "3rem" }}></Portfolio>}
         {value == "transactions" && <Transactions className="white" sx={{ marginTop: "3rem" }}></Transactions>}
+        {value == "nft-profiler" && <NftProfiler sx={{ marginTop: "3rem" }}></NftProfiler>}
 
       </Box>
     </div>
