@@ -117,6 +117,8 @@ export default function AboutUs() {
           alt="about us"
           height="240"
           image={aboutUsBanner}
+          onMouseOver={(e) => (e.currentTarget.src = aboutUsBannerHover)}
+          onMouseLeave={(e) => (e.currentTarget.src = aboutUsBanner)}
         />
       </Card>
       <Typography
@@ -199,8 +201,11 @@ export default function AboutUs() {
             >
               <CardMedia
                 sx={{ height: 320, borderRadius: "1rem" }}
+                component={"img"}
                 image={member.image}
                 title={member.name}
+                onMouseOver={(e) => (e.currentTarget.src = member.hoverImage)}
+                onMouseLeave={(e) => (e.currentTarget.src = member.image)}
               />
               <CardContent>
                 <Typography
