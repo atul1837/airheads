@@ -4,6 +4,8 @@ import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import Headmap from "./components/Headmap";
 import Staking from "./components/Staking";
+import SneakerHeads from "./components/SneakerHeads";
+import Shop from "./components/Shop";
 
 const pages = [
   {
@@ -19,7 +21,7 @@ const pages = [
   {
     key: "SHOP",
     heading: "SHOP",
-    component: <div>SHOP</div>,
+    component: <Shop />,
   },
   {
     key: "ABOUTUS",
@@ -36,7 +38,7 @@ const extraPages = [
   {
     key: "SNEAKERHEADS",
     heading: "SNEAKER HEADS",
-    component: <div>SNEAKERHEADS</div>,
+    component: <SneakerHeads />,
   },
   {
     key: "TRACKINGHEADS",
