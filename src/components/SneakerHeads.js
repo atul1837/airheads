@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button, Card, CardContent, Grid, Typography } from "@mui/material";
 import axios from "axios";
+import { isMobile } from "react-device-detect";
 
 const BASE_URL = "http://localhost:4000/api";
 
@@ -25,7 +26,7 @@ export default function SneakerHeads() {
 
   return (
     <div className="bg-black">
-      <div className="pl-16 pt-12">
+      <div className={`${isMobile ? "pl-8" : "pl-16"} pt-12`}>
         <h1
           style={{
             textAlign: "left",
@@ -34,14 +35,14 @@ export default function SneakerHeads() {
             fontFamily: "kanit",
             fontStyle: "normal",
             fontWeight: "700",
-            fontSize: "72px",
+            fontSize: isMobile ? "44px" : "72px",
             lineHeight: "80%",
           }}
         >
           SNEAKER HEADS
         </h1>
 
-        <Grid container spacing={2} sx={{ width: "80%" }}>
+        <Grid container spacing={2} sx={{ width: isMobile ? "100%" : "80%" }}>
           {sneakersData.map((sneaker) => (
             <Grid item xs={12} md={6} key={sneaker._id}>
               <Card sx={{ textAlign: "left", background: "#000" }}>
@@ -64,7 +65,7 @@ export default function SneakerHeads() {
                     gutterBottom
                     variant="p"
                     component="div"
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff", width: isMobile ? "100%" : "70%" }}
                   >
                     {sneaker?.description}
                   </Typography>

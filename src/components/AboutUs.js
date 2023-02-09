@@ -1,5 +1,6 @@
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { isMobile } from "react-device-detect";
 import aboutUsBanner from "../assets/aboutus/aboutUsBanner.svg";
 import aboutUsBannerHover from "../assets/aboutus/aboutUsBannerHover.svg";
 
@@ -106,7 +107,7 @@ export default function AboutUs() {
           fontFamily: "kanit",
           fontStyle: "normal",
           fontWeight: "700",
-          fontSize: "72px",
+          fontSize: isMobile ? "44px" : "72px",
         }}
       >
         ABOUT US

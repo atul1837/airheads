@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button, Card, CardContent, Grid, Typography } from "@mui/material";
 import axios from "axios";
+import { isMobile } from "react-device-detect";
 
 const BASE_URL = "http://localhost:4000/api";
 
@@ -24,7 +25,7 @@ export default function Shop() {
 
   return (
     <div className="bg-black">
-      <div className="pl-16 pt-12">
+      <div className={`${isMobile ? "pl-8" : "pl-16"} pt-12`}>
         <h1
           style={{
             textAlign: "left",
@@ -33,14 +34,14 @@ export default function Shop() {
             fontFamily: "kanit",
             fontStyle: "normal",
             fontWeight: "700",
-            fontSize: "72px",
+            fontSize: isMobile ? "44px" : "72px",
             lineHeight: "80%",
           }}
         >
           SHOP
         </h1>
 
-        <Grid container spacing={2} sx={{ width: "80%" }}>
+        <Grid container spacing={2} sx={{ width: isMobile ? "100%" : "80%" }}>
           {productsData.map((product) => (
             <Grid item xs={12} md={6} key={product._id}>
               <Card sx={{ textAlign: "left", background: "#000" }}>
@@ -81,7 +82,7 @@ export default function Shop() {
                       textAlign: "left",
                     }}
                   >
-                    Purchase
+                    Buy
                   </Button>
                 </CardContent>
               </Card>
