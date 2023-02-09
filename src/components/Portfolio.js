@@ -22,6 +22,11 @@ import { BasicChips } from "./BasicChips";
 export default function Portfolio() {
     const [dense, setDense] = React.useState(false);
     const [secondary, setSecondary] = React.useState(false);
+    React.useEffect(() => {
+      document.querySelectorAll(".donutchart-arcs-path").forEach((item) => {
+        item.setAttribute("opacity", "1")
+      });
+    }, []);
     return (
       <div>
         <BasicChips />
@@ -36,6 +41,7 @@ export default function Portfolio() {
             //   height={100}
             width={250}
             legend={false}
+            interactive={false}
             data={[
               {
                 //   label: "ETH",
@@ -192,6 +198,9 @@ export default function Portfolio() {
             //   height={100}
             width={250}
             legend={false}
+            toggledOffset={0}
+            clickToggle={false}
+            interactive={false}
             data={[
               {
                 //   label: "ETH",

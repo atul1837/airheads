@@ -4,8 +4,16 @@ import HomeImage from "../../src/assets/home.jpg";
 export default function Home() {
 
   return (
-    <div>
-        <img src={HomeImage} alt="Home" />
+    <div
+      style={{
+        backgroundImage: `url(${HomeImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "100vh",
+        width: "100%",
+      }}
+    >
     </div>
   );
 }
