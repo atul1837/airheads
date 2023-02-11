@@ -93,7 +93,7 @@ export default function AboutUs() {
         background: "#000",
         color: "#fff",
         margin: "0 auto",
-        width: "100%",
+        width: isMobile ? '100%' : '90%',
       }}
     >
       <Typography
@@ -112,7 +112,7 @@ export default function AboutUs() {
       >
         ABOUT US
       </Typography>
-      <Card sx={{ width: "80%", borderRadius: "2rem" }}>
+      <Card sx={{ borderRadius: "2rem" }}>
         <CardMedia
           component="img"
           alt="about us"
@@ -133,7 +133,7 @@ export default function AboutUs() {
         IN A LAND FAR
       </Typography>
       <Grid container spacing={2}>
-        <Grid item md={4} spacing={4}>
+        <Grid item md={6} spacing={4}>
           <Typography>
             <Typography variant="p" component="p">
               far away, some hippies had a cosmic vision. But then they
@@ -154,8 +154,8 @@ export default function AboutUs() {
             </Typography>
           </Typography>
         </Grid>
-        <Grid item md={1}></Grid>
-        <Grid item md={4}>
+        {/* <Grid item md={1}></Grid> */}
+        <Grid item md={6}>
           <Typography>
             However, this evolution had the potential of going haywire. You
             could either choose the degen route by embracing a freaking cat

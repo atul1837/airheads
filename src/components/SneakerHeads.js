@@ -42,7 +42,7 @@ export default function SneakerHeads() {
           SNEAKER HEADS
         </h1>
 
-        <Grid container spacing={2} sx={{ width: isMobile ? "100%" : "80%" }}>
+        <Grid container spacing={2} sx={{ width: "100%" }}>
           {sneakersData.map((sneaker) => (
             <Grid item xs={12} md={6} key={sneaker._id}>
               <Card sx={{ textAlign: "left", background: "#000" }}>

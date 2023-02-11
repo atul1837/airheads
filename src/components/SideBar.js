@@ -8,6 +8,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import sideBarLogo from "../assets/sidebar_logo.svg";
 import sideBarDrake from "../assets/sidebar_drake.svg";
+import drakeAudioPlayed from "../assets/drakeAudioPlayed.png";
+
 import {
   Fab,
   Button,
@@ -20,6 +22,7 @@ import {
 } from "@mui/material";
 import { CaretDownFilledIcon, DiscordIcon, TwitterIcon } from "../icons";
 import { isMobile } from "react-device-detect";
+import passionfruitAudio from "../assets/audio/passionfruit.mp3";
 
 const drawerWidth = 290;
 
@@ -39,6 +42,22 @@ export default function SideBar({ pages, extraPages }) {
   const [activePage, setActivePage] = useState();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [musicPlay, setMusicPlay] = useState(false);
+
+  // const audio = new Audio(passionfruitAudio);
+
+  useEffect(() => {
+    if(musicPlay) {
+      const audio = document.getElementById('sound');
+      audio.play();
+    }else {
+    const audio = document.getElementById('sound');
+    if(audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    }
+  }, [musicPlay]);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -203,7 +222,13 @@ export default function SideBar({ pages, extraPages }) {
           >
             Connect wallet
           </Button>
-          <img src={sideBarDrake} alt="drake" className="px-12" />
+          <img onClick={()=> setMusicPlay(!musicPlay)} src={musicPlay ? drakeAudioPlayed : sideBarDrake} alt="drake" className="px-12" style={{ cursor: "pointer" }} />
+          <audio
+    id='sound' 
+    controls
+    style={{ display: "none" }}
+    src={passionfruitAudio}>
+    </audio>
           <div className="text-center mt-12" style={{ fontSize: ".6rem" }}>
             <Typography
               className="underline"
@@ -356,7 +381,13 @@ export default function SideBar({ pages, extraPages }) {
         >
           Connect wallet
         </Button>
-        <img src={sideBarDrake} alt="drake" className="px-12" />
+        <img onClick={()=> setMusicPlay(!musicPlay)} src={musicPlay ? drakeAudioPlayed : sideBarDrake} alt="drake" className="px-12" style={{ cursor: "pointer" }} />
+        <audio
+    id='sound' 
+    controls
+    style={{ display: "none" }}
+    src={passionfruitAudio}>
+    </audio>
         <div className="text-center mt-12" style={{ fontSize: ".6rem" }}>
           <Typography
             className="underline"
@@ -389,7 +420,7 @@ export default function SideBar({ pages, extraPages }) {
       </Drawer>
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: "background.default", p: 0 }}
+        sx={{ flexGrow: 1, bgcolor: "#000", p: 0 }}
       >
         {activePage && activePage.component}
       </Box>

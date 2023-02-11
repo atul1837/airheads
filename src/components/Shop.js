@@ -41,7 +41,7 @@ export default function Shop() {
           SHOP
         </h1>
 
-        <Grid container spacing={2} sx={{ width: isMobile ? "100%" : "80%" }}>
+        <Grid container spacing={2} sx={{ width: "100%" }}>
           {productsData.map((product) => (
             <Grid item xs={12} md={6} key={product._id}>
               <Card sx={{ textAlign: "left", background: "#000" }}>
