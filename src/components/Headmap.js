@@ -20,80 +20,10 @@ export default function Headmap() {
         src: headmapdesktop1,
         alt: "headmapdesktop1",
         style: {
-          height: "18.5vw",
+          height: isMobile ? "22.5vw" : "18.5vw",
           position: "absolute",
-          top: "25vw",
-          left: "30vw",
-        },
-      },
-      hover: {
-        style: {
-          position: "absolute",
-          width: "40vw",
-          top: "25vw",
-          left: "30vw",
-        },
-        heading: "SNEAKER HEADS:",
-        description:
-          "With great power comes great responsibility. Which is why, we want to take it a step further and set an example for once and all. We’ll kickstart this journey in the pre-mint phase. We will be building out custom handcrafted and the most worn shoe of the generation, the Nike Air Force 1 '07 low-top white sneakers. These sneakers would resonate with the our theme and celebrate the top projects of Solana. Not only will this help us reach the heart of the Solana NFT community, but it will also serve as a token of appreciation for this most dynamic art form. Not a holder of DeGods, OkayBears or Cets ? More variations coming soon.... With a limited supply, Sneaker Heads are available to purchase with $SOL , $DUST and more. Each Purchase also comes with an exclusive OG Spot for our Air Heads Mint.",
-      },
-    },
-    {
-      img: {
-        src: headmapdesktop2,
-        alt: "headmapdesktop2",
-        style: {
-          height: "23.3vw",
-          position: "absolute",
-          top: "8vw",
-          left: "50vw",
-        },
-      },
-
-      hover: {
-        style: {
-          position: "absolute",
-          width: "40vw",
-          top: "25vw",
-          left: "30vw",
-        },
-        heading: "$PAINT Staking:",
-        description:
-          "All Airhead holders can stake their NFTs start earning $PAINT per day. I’ll drink to that. Wait. It’s not over yet. As an extension to the staking system, we would also shower some love in the form of Degen Gambling for our community. This is going to be a degnerate form of gambling to get a sneaky multiple that will decide the fate of your $PAINT for the next two weeks. This multiple could be 0.25x, 0.5x, 0.75x, 1x, 1.25x, 1.5x and 2x. But there's a catch....",
-      },
-    },
-    {
-      img: {
-        src: headmapdesktop3,
-        alt: "headmapdesktop3",
-        style: {
-          height: "24.5vw",
-          position: "absolute",
-          top: "2vw",
-          left: "21vw",
-        },
-      },
-      hover: {
-        style: {
-          position: "absolute",
-          width: "40vw",
-          top: "25vw",
-          left: "30vw",
-        },
-        heading: "Community:",
-        description:
-          "Co-Creation is a core value of a true AirHead. Our community and its interests will always lead this project. The AirHead Community is a home to hundreds of thousands of developers, technologists, designers, users, holders and enthusiasts. Our goal is to create a community of holders who are passionate about our project and dedicated to its success, and we plan to achieve this by consistently delivering high-quality products and providing transparent information. We believe that by fostering a strong sense of community and trust, we can ensure the long-term success and growth of Airheads.",
-      },
-    },
-    {
-      img: {
-        src: headmapdesktop4,
-        alt: "headmapdesktop4",
-        style: {
-          height: "18.8vw",
-          position: "absolute",
-          top: "20vw",
-          left: "78.2vw",
+          top: isMobile ? "137vw" : "25vw",
+          left: isMobile ? "11vw" : "30vw",
         },
       },
       hover: {
@@ -110,13 +40,37 @@ export default function Headmap() {
     },
     {
       img: {
-        src: headmapdesktop5,
-        alt: "headmapdesktop5",
+        src: headmapdesktop2,
+        alt: "headmapdesktop2",
         style: {
-          height: "10vw",
+          height: isMobile ? "27.3vw" : "23.3vw",
           position: "absolute",
-          top: "4vw",
-          left: "50vw",
+          top: isMobile ? "83vw" : "8vw",
+          left: isMobile ? "25vw" : "50vw",
+        },
+      },
+
+      hover: {
+        style: {
+          position: "absolute",
+          width: "40vw",
+          top: isMobile ? "79" : "25vw",
+          left: isMobile ? "34" : "30vw",
+        },
+        heading: "Community:",
+        description:
+          "Co-Creation is a core value of a true AirHead. Our community and its interests will always lead this project. The AirHead Community is a home to hundreds of thousands of developers, technologists, designers, users, holders and enthusiasts. Our goal is to create a community of holders who are passionate about our project and dedicated to its success, and we plan to achieve this by consistently delivering high-quality products and providing transparent information. We believe that by fostering a strong sense of community and trust, we can ensure the long-term success and growth of Airheads.",
+      },
+    },
+    {
+      img: {
+        src: headmapdesktop3,
+        alt: "headmapdesktop3",
+        style: {
+          height: isMobile ? "28.5vw" : "24.5vw",
+          position: "absolute",
+          top: isMobile ? "37vw" : "2vw",
+          left: isMobile ? "11vw" : "21vw",
         },
       },
       hover: {
@@ -126,20 +80,20 @@ export default function Headmap() {
           top: "25vw",
           left: "30vw",
         },
-        heading: "Airverse:",
+        heading: "SNEAKER HEADS:",
         description:
-          "Because of the denounced degens we are, we decided to take it out of the world. Literally. Airverse is a dedicated Metaverse for AirHeads. We’ll reveal more on it when the time is ripe.",
+          "With great power comes great responsibility. Which is why, we want to take it a step further and set an example for once and all. We’ll kickstart this journey in the pre-mint phase. We will be building out custom handcrafted and the most worn shoe of the generation, the Nike Air Force 1 '07 low-top white sneakers. These sneakers would resonate with the our theme and celebrate the top projects of Solana. Not only will this help us reach the heart of the Solana NFT community, but it will also serve as a token of appreciation for this most dynamic art form. Not a holder of DeGods, OkayBears or Cets ? More variations coming soon.... With a limited supply, Sneaker Heads are available to purchase with $SOL , $DUST and more. Each Purchase also comes with an exclusive OG Spot for our Air Heads Mint.",
       },
     },
     {
       img: {
-        src: headmapdesktop6,
-        alt: "headmapdesktop6",
+        src: headmapdesktop4,
+        alt: "headmapdesktop4",
         style: {
-          height: "19.4vw",
+          height: isMobile ? "22.8vw" : "18.8vw",
           position: "absolute",
-          top: "2vw",
-          left: "73vw",
+          top: isMobile ? "30vw" : "20vw",
+          left: isMobile ? "69.2vw" : "78.2vw",
         },
       },
       hover: {
@@ -156,36 +110,13 @@ export default function Headmap() {
     },
     {
       img: {
-        src: headmapdesktop7,
-        alt: "headmapdesktop7",
+        src: headmapdesktop5,
+        alt: "headmapdesktop5",
         style: {
-          height: "14vw",
+          height: isMobile ? "14vw" : "10vw",
           position: "absolute",
-          top: "33vw",
-          left: "60.3vw",
-        },
-      },
-      hover: {
-        style: {
-          position: "absolute",
-          width: "40vw",
-          top: "25vw",
-          left: "30vw",
-        },
-        heading: "The Air Club:",
-        description:
-          "Airheads plans to build a real-life nightclub that plans to use web 3 to create a unique and exciting experience for its patrons. The club plans to incorporate Solana and other currencies and reward users for participating in events and parties. This innovative approach to nightlife will bring attention and attract new investors and patrons to the club, further solidifying its place as a leader in the entertainment industry. By offering a cutting-edge experience and rewarding its patrons for their loyalty, Airheads is poised to make a big impact in the world of nightlife.",
-      },
-    },
-    {
-      img: {
-        src: headmapdesktop8,
-        alt: "headmapdesktop8",
-        style: {
-          height: "11.3vw",
-          position: "absolute",
-          top: "0.5vw",
-          left: "62vw",
+          top: isMobile ? "48vw" : "4vw",
+          left: isMobile ? "47vw" : "50vw",
         },
       },
       hover: {
@@ -198,6 +129,75 @@ export default function Headmap() {
         heading: "Air Job Portal:",
         description:
           "We at Airheads aim to revolutionize the freelancing industry by creating a job portal specifically for Web 3 users. Our focus is on connecting highly-skilled developers, artists, UI/UX designers, and other Web 3-centric professionals with employers who are looking for top talent. Our goal is to make it easier for Web 3 professionals to connect with potential employers, and for employers to find and hire the best talent in the industry. By offering a cutting-edge solution for the freelancing industry, Airheads is poised to make a big impact and bring the benefits of Web 3 to the forefront.",
+      },
+    },
+    {
+      img: {
+        src: headmapdesktop6,
+        alt: "headmapdesktop6",
+        style: {
+          height: isMobile ? "23.4vw" : "19.4vw",
+          position: "absolute",
+          top: isMobile ? "78vw" : "2vw",
+          left: isMobile ? "71vw" : "73vw",
+        },
+      },
+      hover: {
+        style: {
+          position: "absolute",
+          width: "40vw",
+          top: "25vw",
+          left: "30vw",
+        },
+        heading: "$PAINT Staking:",
+        description:
+          "All Airhead holders can stake their NFTs start earning $PAINT per day. I’ll drink to that. Wait. It’s not over yet. As an extension to the staking system, we would also shower some love in the form of Degen Gambling for our community. This is going to be a degnerate form of gambling to get a sneaky multiple that will decide the fate of your $PAINT for the next two weeks. This multiple could be 0.25x, 0.5x, 0.75x, 1x, 1.25x, 1.5x and 2x. But there's a catch....",
+      },
+    },
+    {
+      img: {
+        src: headmapdesktop7,
+        alt: "headmapdesktop7",
+        style: {
+          height: isMobile ? "18vw" : "14vw",
+          position: "absolute",
+          top: isMobile ? "116vw" : "33vw",
+          left: isMobile ? "57.3vw" : "60.3vw",
+        },
+      },
+      hover: {
+        style: {
+          position: "absolute",
+          width: "40vw",
+          top: "25vw",
+          left: "30vw",
+        },
+        heading: "Airverse:",
+        description:
+          "Because of the denounced degens we are, we decided to take it out of the world. Literally. Airverse is a dedicated Metaverse for AirHeads. We’ll reveal more on it when the time is ripe.",
+      },
+    },
+    {
+      img: {
+        src: headmapdesktop8,
+        alt: "headmapdesktop8",
+        style: {
+          height: isMobile ? "15.3vw" : "11.3vw",
+          position: "absolute",
+          top: isMobile ? "21.5vw" : "0.5vw",
+          left: isMobile ? "56vw" : "62vw",
+        },
+      },
+      hover: {
+        style: {
+          position: "absolute",
+          width: "40vw",
+          top: "25vw",
+          left: "30vw",
+        },
+        heading: "The Air Club:",
+        description:
+          "Airheads plans to build a real-life nightclub that plans to use web 3 to create a unique and exciting experience for its patrons. The club plans to incorporate Solana and other currencies and reward users for participating in events and parties. This innovative approach to nightlife will bring attention and attract new investors and patrons to the club, further solidifying its place as a leader in the entertainment industry. By offering a cutting-edge experience and rewarding its patrons for their loyalty, Airheads is poised to make a big impact in the world of nightlife.",  
       },
     },
   ];
@@ -214,9 +214,7 @@ export default function Headmap() {
         width: "100%",
       }}
     >
-      {isMobile ? (
-        <></>
-      ) : (
+      (
         <>
           {imageData.map((data, i) => (
             <>
@@ -230,13 +228,18 @@ export default function Headmap() {
               />
               <Card
                 sx={{
-                  ...data.hover.style,
+                  width: isMobile ? "80%" : "40vw",
+                  zIndex: "999",
                   background: "#0D0A11",
                   textAlign: "left",
                   border: "2px solid #CEFF86",
                   borderRadius: "2rem",
-                  zIndex: "999",
-                  visibility: hoveredImage === i ? "inherit" : "hidden",
+                  zIndex: "9999",
+                  position: "relative",
+                  top: !isMobile && "25%",
+                  left: !isMobile && "25%",
+                  margin: isMobile && "auto",
+                  display: hoveredImage === i ? "inherit" : "none",
                 }}
               >
                 <CardContent sx={{ padding: "1rem 2.5rem" }}>
@@ -270,7 +273,7 @@ export default function Headmap() {
             </>
           ))}
         </>
-      )}
+      )
     </div>
   );
 }
