@@ -9,18 +9,27 @@ export default function Shop() {
   const [productsData, setProductsData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${BASE_URL}/product`)
-      .then((response) => {
-        setProductsData([
-          ...response?.data?.result?.filter(
-            (item) => !item?.categories?.includes("63e3e1d271f39d56b5f0c9eb")
-          ),
-        ]);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .get(`${BASE_URL}/product`)
+    //   .then((response) => {
+    //     setProductsData([
+    //       ...response?.data?.result?.filter(
+    //         (item) => !item?.categories?.includes("63e3e1d271f39d56b5f0c9eb")
+    //       ),
+    //     ]);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+
+    // get json response from local file
+    const json = require("../assets/json/newresponse.json");
+    setProductsData([
+      ...json?.result?.filter(
+        (item) => !item?.categories?.includes("63e3e1d271f39d56b5f0c9eb")
+      ),
+    ]);
+
   }, []);
 
   return (
