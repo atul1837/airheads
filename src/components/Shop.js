@@ -73,7 +73,10 @@ export default function Shop() {
                     gutterBottom
                     variant="p"
                     component="div"
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff",fontFamily: "awesome",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    fontSize: isMobile ? "15px" : "24px", }}
                   >
                     {product?.description}
                   </Typography>
@@ -81,6 +84,7 @@ export default function Shop() {
                     variant="contained"
                     sx={{
                       textTransform: "none",
+                      "&:hover": {backgroundColor: "#CEFF86"},
                       fontSize: "1rem",
                       fontWeight: "800",
                       borderRadius: ".5rem",
@@ -91,7 +95,7 @@ export default function Shop() {
                       textAlign: "left",
                     }}
                   >
-                    Buy
+                    COMING SOON
                   </Button>
                 </CardContent>
               </Card>

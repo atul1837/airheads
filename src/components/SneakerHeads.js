@@ -74,7 +74,11 @@ export default function SneakerHeads() {
                     gutterBottom
                     variant="p"
                     component="div"
-                    sx={{ color: "#fff", width: isMobile ? "100%" : "70%" }}
+                    sx={{ color: "#fff", width: isMobile ? "100%" : "70%" , fontFamily: "awesome",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    fontSize: isMobile ? "15px" : "24px",}}
+                    
                   >
                     {sneaker?.description}
                   </Typography>
@@ -82,6 +86,7 @@ export default function SneakerHeads() {
                     variant="contained"
                     sx={{
                       textTransform: "none",
+                      "&:hover": {backgroundColor: "#CEFF86"},
                       fontSize: "1rem",
                       fontWeight: "800",
                       borderRadius: ".5rem",
@@ -92,7 +97,7 @@ export default function SneakerHeads() {
                       textAlign: "left",
                     }}
                   >
-                    Purchase
+                    COMING SOON
                   </Button>
                 </CardContent>
               </Card>

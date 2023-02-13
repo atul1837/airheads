@@ -1,8 +1,8 @@
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { isMobile } from "react-device-detect";
-import aboutUsBanner from "../assets/aboutus/aboutUsBanner.svg";
-import aboutUsBannerHover from "../assets/aboutus/aboutUsBannerHover.svg";
+import aboutUsBanner from "../assets/aboutus/team_hero.svg";
+import aboutUsBannerHover from "../assets/aboutus/team_hero_dark.svg";
 
 import team1 from "../assets/aboutus/team1.svg";
 import team1Hover from "../assets/aboutus/team1Hover.svg";
@@ -112,7 +112,7 @@ export default function AboutUs() {
       >
         ABOUT US
       </Typography>
-      <Card sx={{ borderRadius: "2rem" }}>
+      <Card sx={{ borderRadius: "2rem", background:"#000" }}>
         <CardMedia
           component="img"
           alt="about us"
@@ -134,7 +134,14 @@ export default function AboutUs() {
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6} spacing={4}>
-          <Typography>
+          <Typography
+          sx={{
+            fontFamily: "awesome",
+            fontStyle: "normal",
+            fontWeight: "500",
+            fontSize: isMobile ? "15px" : "24px",
+          }}
+          >
             <Typography variant="p" component="p">
               far away, some hippies had a cosmic vision. But then they
               encountered a downer and went back to sleep. Finding the purpose
@@ -156,7 +163,14 @@ export default function AboutUs() {
         </Grid>
         {/* <Grid item md={1}></Grid> */}
         <Grid item md={6}>
-          <Typography>
+          <Typography
+          sx={{
+            fontFamily: "awesome",
+            fontStyle: "normal",
+            fontWeight: "500",
+            fontSize: isMobile ? "15px" : "24px",
+          }}
+          >
             However, this evolution had the potential of going haywire. You
             could either choose the degen route by embracing a freaking cat
             personality OR you could just masquerade as a Nirvana seeking punk.
@@ -224,11 +238,22 @@ export default function AboutUs() {
                   sx={{
                     color: "#FFFFF6",
                     opacity: "60%",
+                    ontFamily: "awesome",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    fontSize: isMobile ? "15px" : "24px",
                   }}
                 >
                   {member.designation}
                 </Typography>
-                <Typography variant="body2">{member.about}</Typography>
+                <Typography 
+                  sx={{
+                    fontFamily: "awesome",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    fontSize: isMobile ? "15px" : "24px",
+                  }}
+                  variant="body2">{member.about}</Typography>
               </CardContent>
             </Card>
           </Grid>

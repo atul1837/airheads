@@ -196,6 +196,8 @@ export default function SideBar({ pages, extraPages }) {
               <Fab
                 key={sc.key}
                 size="small"
+                href="https://twitter.com/AirHeadsNFT_"
+                target="_blank" 
                 sx={{
                   padding: ".1rem",
                   margin: ".25rem",
@@ -208,7 +210,7 @@ export default function SideBar({ pages, extraPages }) {
             ))}
           </div>
           <Button
-            variant="contained"
+            variant="contained" disabled
             sx={{
               letterSpacing: ".001rem",
               textTransform: "none",
@@ -218,6 +220,7 @@ export default function SideBar({ pages, extraPages }) {
               backgroundColor: "#CEFF86",
               color: "#000",
               margin: "2rem 3rem 4rem 3rem",
+              pointerEvents: 'none'
             }}
           >
             Connect wallet
@@ -355,6 +358,8 @@ export default function SideBar({ pages, extraPages }) {
             <Fab
               key={sc.key}
               size="small"
+              href="https://twitter.com/AirHeadsNFT_"
+              target="_blank" 
               sx={{
                 padding: ".1rem",
                 margin: ".25rem",
@@ -377,6 +382,7 @@ export default function SideBar({ pages, extraPages }) {
             backgroundColor: "#CEFF86",
             color: "#000",
             margin: "2rem 3rem 4rem 3rem",
+            pointerEvents: 'none'
           }}
         >
           Connect wallet

@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "awesome";
+  src: local("awesome"),
+   url("./fonts/awesome.ttf") format("truetype");
+  font-weight: normal;
+  }
