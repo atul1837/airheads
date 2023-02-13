@@ -275,7 +275,7 @@ export default function SideBar({ pages, extraPages }) {
         </Drawer>
         <Box
           component="main"
-          sx={{ flexGrow: 1, bgcolor: "background.default", p: 0 }}
+          sx={{ flexGrow: 1, p: 0, backgroundColor: "#000" }}
         >
           {activePage && activePage.component}
         </Box>

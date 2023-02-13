@@ -49,7 +49,7 @@ const extraPages = [
 
 export default function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#000" }}>
       <SideBar pages={pages} extraPages={extraPages} />
     </div>
   );

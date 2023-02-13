@@ -271,6 +271,7 @@ export default function Headmap() {
     // add HeadmapImage as backgroud image in div
     <div
       style={{
+        backgroundColor: "#000",
         backgroundImage: `url(${HeadmapImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
