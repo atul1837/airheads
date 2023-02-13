@@ -9,7 +9,7 @@ import ListItemText from "@mui/material/ListItemText";
 import sideBarLogo from "../assets/sidebar_logo.svg";
 import sideBarDrake from "../assets/sidebar_drake.svg";
 import drakeAudioPlayed from "../assets/drakeAudioPlayed.png";
-import drakeAudioPlayedWebp from "../assets/drakeAudioPlayed.webp";
+import drakeAudioPlayedWebp from "../assets/drakeaudioplayed.webp";
 
 import {
   Fab,
