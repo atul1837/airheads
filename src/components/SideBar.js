@@ -9,6 +9,7 @@ import ListItemText from "@mui/material/ListItemText";
 import sideBarLogo from "../assets/sidebar_logo.svg";
 import sideBarDrake from "../assets/sidebar_drake.svg";
 import drakeAudioPlayed from "../assets/drakeAudioPlayed.png";
+import drakeAudioPlayedWebp from "../assets/drakeAudioPlayed.webp";
 
 import {
   Fab,
@@ -47,15 +48,15 @@ export default function SideBar({ pages, extraPages }) {
   // const audio = new Audio(passionfruitAudio);
 
   useEffect(() => {
-    if(musicPlay) {
-      const audio = document.getElementById('sound');
+    if (musicPlay) {
+      const audio = document.getElementById("sound");
       audio.play();
-    }else {
-    const audio = document.getElementById('sound');
-    if(audio) {
-      audio.pause();
-      audio.currentTime = 0;
-    }
+    } else {
+      const audio = document.getElementById("sound");
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
     }
   }, [musicPlay]);
 
@@ -197,7 +198,7 @@ export default function SideBar({ pages, extraPages }) {
                 key={sc.key}
                 size="small"
                 href="https://twitter.com/AirHeadsNFT_"
-                target="_blank" 
+                target="_blank"
                 sx={{
                   padding: ".1rem",
                   margin: ".25rem",
@@ -210,7 +211,8 @@ export default function SideBar({ pages, extraPages }) {
             ))}
           </div>
           <Button
-            variant="contained" disabled
+            variant="contained"
+            disabled
             sx={{
               letterSpacing: ".001rem",
               textTransform: "none",
@@ -220,18 +222,27 @@ export default function SideBar({ pages, extraPages }) {
               backgroundColor: "#CEFF86",
               color: "#000",
               margin: "2rem 3rem 4rem 3rem",
-              pointerEvents: 'none'
+              pointerEvents: "none",
             }}
           >
             Connect wallet
           </Button>
-          <img onClick={()=> setMusicPlay(!musicPlay)} src={musicPlay ? drakeAudioPlayed : sideBarDrake} alt="drake" className="px-12" style={{ cursor: "pointer" }} />
+          <picture>
+            <source srcSet={musicPlay ? drakeAudioPlayedWebp : sideBarDrake} />
+            <img
+              onClick={() => setMusicPlay(!musicPlay)}
+              src={musicPlay ? drakeAudioPlayed : sideBarDrake}
+              alt="drake"
+              className="px-12"
+              style={{ cursor: "pointer" }}
+            />
+          </picture>
           <audio
-    id='sound' 
-    controls
-    style={{ display: "none" }}
-    src={passionfruitAudio}>
-    </audio>
+            id="sound"
+            controls
+            style={{ display: "none" }}
+            src={passionfruitAudio}
+          ></audio>
           <div className="text-center mt-12" style={{ fontSize: ".6rem" }}>
             <Typography
               className="underline"
@@ -359,7 +370,7 @@ export default function SideBar({ pages, extraPages }) {
               key={sc.key}
               size="small"
               href="https://twitter.com/AirHeadsNFT_"
-              target="_blank" 
+              target="_blank"
               sx={{
                 padding: ".1rem",
                 margin: ".25rem",
@@ -382,18 +393,27 @@ export default function SideBar({ pages, extraPages }) {
             backgroundColor: "#CEFF86",
             color: "#000",
             margin: "2rem 3rem 4rem 3rem",
-            pointerEvents: 'none'
+            pointerEvents: "none",
           }}
         >
           Connect wallet
         </Button>
-        <img onClick={()=> setMusicPlay(!musicPlay)} src={musicPlay ? drakeAudioPlayed : sideBarDrake} alt="drake" className="px-12" style={{ cursor: "pointer" }} />
+        <picture>
+          <source srcSet={musicPlay ? drakeAudioPlayedWebp : sideBarDrake} />
+          <img
+            onClick={() => setMusicPlay(!musicPlay)}
+            src={musicPlay ? drakeAudioPlayed : sideBarDrake}
+            alt="drake"
+            className="px-12"
+            style={{ cursor: "pointer" }}
+          />
+        </picture>
         <audio
-    id='sound' 
-    controls
-    style={{ display: "none" }}
-    src={passionfruitAudio}>
-    </audio>
+          id="sound"
+          controls
+          style={{ display: "none" }}
+          src={passionfruitAudio}
+        ></audio>
         <div className="text-center mt-12" style={{ fontSize: ".6rem" }}>
           <Typography
             className="underline"
@@ -424,10 +444,7 @@ export default function SideBar({ pages, extraPages }) {
           </Typography>
         </div>
       </Drawer>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, bgcolor: "#000", p: 0 }}
-      >
+      <Box component="main" sx={{ flexGrow: 1, bgcolor: "#000", p: 0 }}>
         {activePage && activePage.component}
       </Box>
     </Box>
