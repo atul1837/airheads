@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import Headmap from "./components/Headmap";
 import Staking from "./components/Staking";
+import AirTalentHub from "./components/AirTalentHub";
 import SneakerHeads from "./components/SneakerHeads";
 import Shop from "./components/Shop";
 
@@ -39,6 +40,11 @@ const extraPages = [
     key: "TRACKINGHEADS",
     heading: "TRACKING HEADS",
     component: <TrackingHeads />,
+  },
+  {
+    key: "AIRTALENTHUB",
+    heading: "AIR TALENT HUB",
+    component: <AirTalentHub />,
   },
   {
     key: "STAKING",

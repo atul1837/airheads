@@ -51,6 +51,7 @@ export default function SideBar({ pages, extraPages }) {
     if (musicPlay) {
       const audio = document.getElementById("sound");
       audio.play();
+      audio.loop = true;
     } else {
       const audio = document.getElementById("sound");
       if (audio) {
