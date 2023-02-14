@@ -31,11 +31,6 @@ const pages = [
 ];
 const extraPages = [
   {
-    key: "STAKING",
-    heading: "STAKING",
-    component: <Staking />,
-  },
-  {
     key: "SNEAKERHEADS",
     heading: "SNEAKER HEADS",
     component: <SneakerHeads />,
@@ -44,6 +39,11 @@ const extraPages = [
     key: "TRACKINGHEADS",
     heading: "TRACKING HEADS",
     component: <TrackingHeads />,
+  },
+  {
+    key: "STAKING",
+    heading: "STAKING",
+    component: <Staking />,
   },
 ];
 
