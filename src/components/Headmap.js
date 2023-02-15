@@ -106,7 +106,7 @@ export default function Headmap() {
         },
         heading: "SNEAKER HEADS:",
         description:
-        "With great power comes great responsibility. Which is why, we want to take it a step further and set an example for once and all. We will be building out custom handcrafted and the most worn shoe of the generation, the Nike Air Force 1 '07 low-top white sneakers. These sneakers would resonate with our theme and celebrate the top projects of Solana. Not only will this help us reach the heart of the Solana NFT community, but it will also serve as a token of appreciation for this most dynamic art form. Not a holder of DeGods, OkayBears or Cets ? More variations coming soon.... With a limited supply, Sneaker Heads are available to purchase with $PAINT.",
+        "With great power comes great responsibility. Which is why, we want to take it a step further and set an example for once and all. We will be building out custom handcrafted and the most worn shoe of the generation, the Nike Air Force 1 '07 low-top white sneakers. These sneakers would resonate with our theme and celebrate the top projects of Solana. Not only will this help us reach the heart of the Solana NFT community, but it will also serve as a token of appreciation for this most dynamic art form. Not a holder of DeGods, OkayBears or Cets ? More variations coming soon.... With a limited supply, Sneaker Heads are available to purchase with $HEAD.",
       },
       card: {
         style: {
@@ -136,7 +136,7 @@ export default function Headmap() {
         },
         heading: "Shop Heads:",
         description:
-          "Well, didn’t you always want an artform that can be embraced and adored at the same time? Your wish is our command. Shop Heads is an exclusive merchandise for our beloved Air Heads. You can use your $PAINT to take home the quirkiest merch that defines your personality. AirHead can’t be contained in the boundaries of a digital space. So we will soon launch our erch delivery around the world to raise awareness about the project and reach a further audience. Say what? That’s tapping into some fresh Normies to bring them onto the web3 space. The items available on the shop are - Hoodies - Tshirts - Shorts - Track pants",
+          "Well, didn’t you always want an artform that can be embraced and adored at the same time? Your wish is our command. Shop Heads is an exclusive merchandise for our beloved Air Heads. You can use your $HEAD to take home the quirkiest merch that defines your personality. AirHead can’t be contained in the boundaries of a digital space. So we will soon launch our erch delivery around the world to raise awareness about the project and reach a further audience. Say what? That’s tapping into some fresh Normies to bring them onto the web3 space. The items available on the shop are - Hoodies - Tshirts - Shorts - Track pants",
       },
       card: {
         style: {
@@ -194,9 +194,9 @@ export default function Headmap() {
           top: "25vw",
           left: "30vw",
         },
-        heading: "$PAINT Staking:",
+        heading: "$HEAD Staking:",
         description:
-          "All Airhead holders can stake their NFTs start earning $PAINT. I’ll drink to that. Wait. It’s not over yet. As an extension to the staking system, we would also shower some love in the form of Degen Gambling for our community. This is going to be a degnerate form of gambling to get a sneaky multiple that will decide the fate of your $PAINT. This multiple could be 0.25x, 0.5x, 0.75x, 1x, 1.25x, 1.5x and 2x. $PAINT can be used in our ecosystem to buy merch, do art upgrade, unlock pro tools and more...",
+          "All Airhead holders can stake their NFTs start earning $HEAD. I’ll drink to that. Wait. It’s not over yet. As an extension to the staking system, we would also shower some love in the form of Degen Gambling for our community. This is going to be a degnerate form of gambling to get a sneaky multiple that will decide the fate of your $HEAD. This multiple could be 0.25x, 0.5x, 0.75x, 1x, 1.25x, 1.5x and 2x. $HEAD can be used in our ecosystem to buy merch, do art upgrade, unlock pro tools and more...",
       },
       card: {
         style: {

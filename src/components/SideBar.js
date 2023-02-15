@@ -193,7 +193,7 @@ export default function SideBar({ pages, extraPages }) {
             </Menu>
           )}
 
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-8" style={{marginBottom: "2rem"}}>
             {socialIcons.map((sc) => (
               <Fab
                 key={sc.key}
@@ -211,7 +211,7 @@ export default function SideBar({ pages, extraPages }) {
               </Fab>
             ))}
           </div>
-          <Button
+          {/* <Button
             variant="contained"
             disabled
             sx={{
@@ -227,7 +227,7 @@ export default function SideBar({ pages, extraPages }) {
             }}
           >
             Connect wallet
-          </Button>
+          </Button> */}
           <picture>
             <source srcSet={musicPlay ? drakeAudioPlayedWebp : sideBarDrake} />
             <img
@@ -365,7 +365,7 @@ export default function SideBar({ pages, extraPages }) {
           </Menu>
         )}
 
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-8" style={{marginBottom: "2rem"}}>
           {socialIcons.map((sc) => (
             <Fab
               key={sc.key}
@@ -383,8 +383,9 @@ export default function SideBar({ pages, extraPages }) {
             </Fab>
           ))}
         </div>
-        <Button
-          variant="contained"
+        {/* <Button
+          variant="disable"
+          disable
           sx={{
             letterSpacing: ".001rem",
             textTransform: "none",
@@ -398,7 +399,7 @@ export default function SideBar({ pages, extraPages }) {
           }}
         >
           Connect wallet
-        </Button>
+        </Button> */}
         <picture>
           <source srcSet={musicPlay ? drakeAudioPlayedWebp : sideBarDrake} />
           <img
