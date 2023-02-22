@@ -3,7 +3,7 @@ import { Button, Card, CardContent, Grid, Typography } from "@mui/material";
 import axios from "axios";
 import { isMobile } from "react-device-detect";
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = process.env;
 
 export default function SneakerHeads() {
   const [sneakersData, setSneakersData] = useState([]);
